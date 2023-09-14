@@ -1,12 +1,8 @@
-import { AboutButtonStyled } from "./Header.styled";
+import { AboutButtonStyled } from "../Header.styled";
 import { useState } from "react";
-import {
-  AboutMeDiv,
-  DeleteButton,
-  ContactDiv,
-  AboutWrapper,
-} from "./Header.styled";
-import ContactForm from "./ContactForm";
+import { AboutWrapper} from "../Header.styled";
+import { AboutMeDiv, ContactDiv, DeleteButton } from "./ContactForm/Contact.styled";
+import ContactForm from "./ContactForm/ContactForm";
 
 function AboutMeButton() {
   const [hidden, setHidden] = useState(false);
@@ -19,7 +15,7 @@ function AboutMeButton() {
     <>
       <AboutButtonStyled 
         onClick={() => openAbout()} 
-        animate={{ rotate: 360 }}
+        animate={{ rotateX: 360 }}
         transition={{duration: 1.5}}
       >
         About Me

@@ -9,7 +9,11 @@ function Project(props: any) {
       // transition={{ delay: 0.5, duration: 2}}
       // !!!  ვების რენდერისთაანავე იწყებს 
     >
-        {props.title}
+      <img src={props.img} />
+      <div>
+        <h2>{props.title}</h2>
+        <a href={props.url} target="_blank">Git Link</a>
+      </div>
     </ProjectDiv>
   );
 }

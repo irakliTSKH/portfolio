@@ -1,4 +1,5 @@
 import { MobileBarStyled, NavBarStyled } from "./Navigation.styled"
+import logo from "../../../assets/logo.png"
 import {PropsTypes} from '../../../types/types'
 import {
   FaHome,
@@ -16,6 +17,9 @@ const scrollToElement =  (elementRef: React.RefObject<HTMLDivElement>) => {
   }
 };
 
+const reload = () => {
+  window.location.reload()
+}
 
 const MobileBar = ({headerRef, skillsRef, projectRef }:PropsTypes) => {
 
@@ -27,10 +31,17 @@ const MobileBar = ({headerRef, skillsRef, projectRef }:PropsTypes) => {
       <FaChalkboardTeacher  onClick={() => scrollToElement(skillsRef)}/>
     </MobileBarStyled>
 
-    <NavBarStyled>
-      <li onClick={() => scrollToElement(headerRef)}>header</li>
-      <li onClick={() => scrollToElement(projectRef)}>project</li>
-      <li onClick={() => scrollToElement(skillsRef)}>skills</li>
+    <NavBarStyled 
+         animate={{y: 0 }} 
+         initial={{y: -200}}
+         transition={{duration: 1}}
+    >
+      <img src={logo} onClick={reload}/>
+      <ul>
+        <li onClick={() => scrollToElement(headerRef)}>header</li>
+        <li onClick={() => scrollToElement(projectRef)}>project</li>
+        <li onClick={() => scrollToElement(skillsRef)}>skills</li>
+      </ul>
     </NavBarStyled>
 
     </>

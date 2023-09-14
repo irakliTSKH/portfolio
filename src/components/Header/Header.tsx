@@ -1,29 +1,19 @@
-import { HeaderStyled, Img, IconDiv, InfoDiv } from "./Header.styled"
+import { HeaderStyled, IconDiv, InfoDiv } from "./Header.styled"
 import { forwardRef } from "react";
-import logo from '../../assets/IT_(1990)_logo.png'
+import logo from '../../assets/logo.png'
 import { FaFacebookF, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 // components
-import AboutMeButton from './AboutMeButton';
+import AboutMeButton from './AboutMe/AboutMeButton';
 import Star from "./Star";
 
 // TS any !!!
 const Header = forwardRef((props: any, ref: any) => {
  
-const reload = () => {
-  window.location.reload()
-}
 
   return (
     <HeaderStyled ref={ref}>
-      <Img
-        src={logo}
-        onClick={() => reload()} 
-        animate={{x: 0, scale: 4}} 
-        initial={{x: -200}}
-        transition={{duration: 1}}
-      />
-
+     
       <IconDiv
         animate={{x: 0 }} 
         initial={{x: 200}}
@@ -34,10 +24,9 @@ const reload = () => {
         <a href="https://github.com/irakliTSKH" target="_blank"><FaGithubSquare /></a>
       </IconDiv>
     
-      <InfoDiv 
-        animate={{rotate: 360}}
-        transition={{duration: 1, type:'spring', stiffness: 100}}
-      >
+      <InfoDiv >
+        <img src={logo} />
+
         <h1>Irakli Tskhelishvili</h1>
         <h3>Front-End Developer</h3>
 

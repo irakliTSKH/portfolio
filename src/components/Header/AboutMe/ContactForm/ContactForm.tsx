@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { ContactFormStyled } from "./Header.styled";
+import { ContactFormStyled } from "../../Header.styled";
 import EmailSent from "./EmailSent";
 
 function ContactForm() {
@@ -37,8 +37,8 @@ function ContactForm() {
           placeholder="Email"
           required
         />
-        <textarea name="message" rows={10} cols={30} required />
-        <button type="submit" value="Send" />
+        <textarea name="message"  required />
+        <button type="submit" value="Send">Submit</button>
       </ContactFormStyled>
     ) : (
       <EmailSent />
