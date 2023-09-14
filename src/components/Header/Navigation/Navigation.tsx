@@ -38,8 +38,8 @@ const MobileBar = ({headerRef, skillsRef, projectRef }:PropsTypes) => {
     >
       <img src={logo} onClick={reload}/>
       <ul>
-        <li onClick={() => scrollToElement(headerRef)}>header</li>
-        <li onClick={() => scrollToElement(projectRef)}>project</li>
+        <li onClick={() => scrollToElement(headerRef)}>About</li>
+        <li onClick={() => scrollToElement(projectRef)}>Projects</li>
         <li onClick={() => scrollToElement(skillsRef)}>skills</li>
       </ul>
     </NavBarStyled>

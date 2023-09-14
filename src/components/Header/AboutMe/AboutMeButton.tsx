@@ -1,4 +1,4 @@
-import { AboutButtonStyled } from "../Header.styled";
+import { AboutButtonStyled } from "./AboutMeButton.styled";
 import { useState } from "react";
 import { AboutWrapper} from "../Header.styled";
 import { AboutMeDiv, ContactDiv, DeleteButton } from "./ContactForm/Contact.styled";

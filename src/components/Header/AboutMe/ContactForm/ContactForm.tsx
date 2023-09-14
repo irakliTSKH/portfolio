@@ -1,13 +1,13 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { ContactFormStyled } from "../../Header.styled";
+import { ContactFormStyled } from "./Contact.styled";
 import EmailSent from "./EmailSent";
 
 function ContactForm() {
   const [Sent, setSent] = useState(true);
   const form = useRef();
 
-  const sendEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const sendEmail = (e: React.ChangeEvent<HTMLInputElement> ) => {
     emailjs
       .sendForm(
         "service_yi92myp",
@@ -29,21 +29,17 @@ function ContactForm() {
   };
 
   return Sent ? (
-      <ContactFormStyled ref={form} onSubmit={sendEmail}>
-        <input type="text" name="user_name" placeholder="Name" required />
-        <input
-          type="email"
-          name="user_email"
-          placeholder="Email"
-          required
-        />
-        <textarea name="message"  required />
-        <button type="submit" value="Send">Submit</button>
-      </ContactFormStyled>
-    ) : (
-      <EmailSent />
-    );
-  }
-
+    <ContactFormStyled ref={form} onSubmit={sendEmail}>
+      <input type="text" name="user_name" placeholder="Name *" required />
+      <input type="email" name="user_email" placeholder="Email *" required />
+      <textarea name="message" placeholder="Message *"required />
+      <button type="submit" value="Send">
+        Submit
+      </button>
+    </ContactFormStyled>
+  ) : (
+    <EmailSent />
+  );
+}
 
 export default ContactForm;

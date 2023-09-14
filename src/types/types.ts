@@ -15,3 +15,11 @@ export interface ProjectListType {
   img: string;
   url: string;
 }[];
+
+
+export interface ProjectProps {
+  key: number;
+  title: string;
+  img: string;
+  url: string;
+}

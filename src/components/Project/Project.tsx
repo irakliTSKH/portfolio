@@ -1,18 +1,14 @@
 import { ProjectDiv } from "./Project.styled";
+import { ProjectProps } from "../../types/types";
 
 
-function Project(props: any) {
+function Project(props: ProjectProps) {
   return (
-    <ProjectDiv
-      // initial={{x: '100vw'}}
-      // animate={{x: 0}}
-      // transition={{ delay: 0.5, duration: 2}}
-      // !!!  ვების რენდერისთაანავე იწყებს 
-    >
+    <ProjectDiv >
       <img src={props.img} />
       <div>
         <h2>{props.title}</h2>
-        <a href={props.url} target="_blank">Git Link</a>
+        <a href={props.url} target="_blank">Link</a>
       </div>
     </ProjectDiv>
   );

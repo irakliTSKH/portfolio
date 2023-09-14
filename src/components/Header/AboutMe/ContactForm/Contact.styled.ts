@@ -9,6 +9,8 @@ export const DeleteButton = styled.button`
   top: 5px;
   right: 5px;
   cursor: pointer;
+  background-color: #2e303e;
+  color: white;
 `;
 
 export const AboutMeDiv = styled(motion.div)`
@@ -37,14 +39,20 @@ export const ContactFormStyled = styled.form`
   gap: 10px;
 
   input {
+    color: white;
     width: 80%;
-    border: none;
-    height: 20px;
+    border: 1px solid white;
+    background-color: #2e303e;
+    height: 10px;
     padding: 10px;
   }
   textarea {
-    padding: 20px;
-    width: 60%;
+    border: 1px solid white;
+    color: white;
+    background-color: #2e303e;
+    padding: 10px;
+    width: 80%;
+    height: 50px;
   }
 
   button {
@@ -52,5 +60,7 @@ export const ContactFormStyled = styled.form`
     height: 30px;
     padding: 5px;
     cursor: pointer;
+    background-color: #2e303e;
+    color: white;
   }
 `;
