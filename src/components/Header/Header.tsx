@@ -8,7 +8,7 @@ import AboutMeButton from './AboutMe/AboutMeButton';
 import Star from "./Star";
 
 // TS any !!!
-const Header = forwardRef((props: any, ref: any) => {
+const Header = forwardRef((_, ref: any) => {
  
 
   return (

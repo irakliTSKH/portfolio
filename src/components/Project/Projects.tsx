@@ -4,7 +4,7 @@ import Project from "./Project";
 import { projectList } from "./ProjectsAPI";
 import { ProjectListType } from "../../types/types";
 
-const Projects = forwardRef((props: any, ref: any) => {
+const Projects = forwardRef((_, ref: any) => {
   return (
     <ProjectsStyled ref={ref}>
       <Circle top={200} left={100} width={100} height={100} />

@@ -2,7 +2,7 @@ import { SkillsStyled } from "./Skills.styled"
 import { forwardRef } from "react";
 import Skill from './Skill'
 
-const Skills = forwardRef((props: any, ref: any)  => {
+const Skills = forwardRef((_, ref: any)  => {
   return (
     <SkillsStyled ref={ref}>
         <Skill />
@@ -14,5 +14,3 @@ const Skills = forwardRef((props: any, ref: any)  => {
 
 export default Skills;
 
-
-console.log("here props")
