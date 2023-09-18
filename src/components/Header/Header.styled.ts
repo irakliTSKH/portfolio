@@ -60,12 +60,13 @@ export const InfoDiv = styled.div`
 // AboutMe
 export const AboutWrapper = styled.div`
   position: absolute;
-  top: 100px;
+  top: 10px;
   left: 50%;
   transform: translate(-50%, 0);
 
   @media screen and (min-width: 720px) {
     display: flex;
+    top: 100px;
   }
 `;
 
