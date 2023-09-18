@@ -7,6 +7,7 @@ export interface PropsTypes {
 export interface PropsType {
   x: number;
   y: number;
+  time?: number;
 }
 
 export interface ProjectListType {
@@ -22,4 +23,12 @@ export interface ProjectProps {
   title: string;
   img: string;
   url: string;
+}
+
+export interface CircleProps {
+  top?: number;
+  left?: number;
+  right?: number;
+  width?: number;
+  height?: number;
 }

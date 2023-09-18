@@ -6,6 +6,7 @@ export const SkillsStyled = styled.div`
     display: grid;
     grid-template-columns: auto auto;
     margin: 2px 0;
+    background-color: white;
     
 
     @media screen and (min-width: 1200px){
@@ -33,20 +34,20 @@ export const SkillDiv = styled.div`
         position: absolute;
         width: 250%;
         height: 250%;
-        background: linear-gradient(blue, red);
+        background: linear-gradient(blue, white);
         animation: animate 2s linear infinite;
     }
     &::after {
         content: '';
         position: absolute;
-        background: #101023;
+        background: white;
         inset: 5px;
         border-radius: 16px;
     }
     
     p {
         position: relative;
-        color: white;
+        color: black;
         font-size: 1rem;
         z-index: 11;
     }

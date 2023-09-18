@@ -8,9 +8,11 @@ const Skills = forwardRef((props: any, ref: any)  => {
         <Skill />
         <Skill />
         <Skill />
-        <Skill />
     </SkillsStyled>
   )
 })
 
 export default Skills;
+
+
+console.log("here props")

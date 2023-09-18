@@ -40,7 +40,7 @@ export const IconDiv = styled(motion.div)`
 `;
 
 export const InfoDiv = styled.div`
-  margin: 100px;
+  margin: 50px;
   img {
     width: 100px;
     height: 100px;

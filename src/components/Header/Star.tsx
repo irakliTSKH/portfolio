@@ -8,7 +8,7 @@ function Star ( props: PropsType ) {
     <StarsDiv  
     x={props.x}
     y={props.y}
-    initial={{ opacity: 0, }}
+    initial={{ opacity: 1 }}
     animate={
       { opacity: [0, 1, 0, 1, 0, 1, 0], 
         scale: [0.5, 1, 2, 1, 0.5], 
@@ -17,7 +17,7 @@ function Star ( props: PropsType ) {
         rotate: 150
         }
       } 
-    transition={{ delay: 0.5, duration: 20, repeat: Infinity}}
+    transition={{ delay: 0.5, duration: 8, repeat: Infinity}}
     >
     <FaStarStyled    />
    

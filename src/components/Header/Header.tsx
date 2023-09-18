@@ -17,7 +17,7 @@ const Header = forwardRef((props: any, ref: any) => {
       <IconDiv
         animate={{x: 0 }} 
         initial={{x: 200}}
-        transition={{duration: 1}}
+        transition={{duration: 1.5}}
       >
         <a href="https://www.facebook.com/IrakliTskhelishvili" target="_blank"> <FaFacebookF /></a>
         <a href="https://www.linkedin.com/in/irakli-tskhelishvili-8b1856245/" target="_blank"><FaLinkedin /></a>
@@ -40,14 +40,17 @@ const Header = forwardRef((props: any, ref: any) => {
       <Star x={250} y={440} />
       <Star x={100} y={340} />
       <Star x={20} y={240} />
-      <Star x={200} y={340} />
+      <Star x={200} y={340} time={2}/>
       <Star x={340} y={740} />
-      <Star x={330} y={940} />
-      <Star x={240} y={590} />
-      <Star x={70} y={670} />
+      <Star x={330} y={940} time={2}/>
+      <Star x={240} y={590} time={2} />
+      <Star x={70} y={670} time={2} />
       
     </HeaderStyled>
   );
 });
 
 export default Header;
+
+
+console.log("here props")

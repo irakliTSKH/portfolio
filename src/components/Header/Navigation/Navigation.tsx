@@ -21,7 +21,7 @@ const reload = () => {
   window.location.reload()
 }
 
-const MobileBar = ({headerRef, skillsRef, projectRef }:PropsTypes) => {
+const Navigation = ({headerRef, skillsRef, projectRef }:PropsTypes) => {
 
   return (
     <>
@@ -34,7 +34,7 @@ const MobileBar = ({headerRef, skillsRef, projectRef }:PropsTypes) => {
     <NavBarStyled 
          animate={{y: 0 }} 
          initial={{y: -200}}
-         transition={{duration: 1}}
+         transition={{duration: 1.5}}
     >
       <img src={logo} onClick={reload}/>
       <ul>
@@ -48,4 +48,4 @@ const MobileBar = ({headerRef, skillsRef, projectRef }:PropsTypes) => {
   );
 };
 
-export default MobileBar;
+export default Navigation;

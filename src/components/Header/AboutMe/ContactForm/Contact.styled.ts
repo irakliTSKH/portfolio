@@ -41,13 +41,11 @@ export const ContactFormStyled = styled.form`
   input {
     color: white;
     width: 80%;
-    border: 1px solid white;
     background-color: #2e303e;
     height: 10px;
     padding: 10px;
   }
   textarea {
-    border: 1px solid white;
     color: white;
     background-color: #2e303e;
     padding: 10px;

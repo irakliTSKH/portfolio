@@ -3,6 +3,9 @@ import emailjs from "@emailjs/browser";
 import { ContactFormStyled } from "./Contact.styled";
 import EmailSent from "./EmailSent";
 
+
+
+
 function ContactForm() {
   const [Sent, setSent] = useState(true);
   const form = useRef();
@@ -43,3 +46,6 @@ function ContactForm() {
 }
 
 export default ContactForm;
+
+
+console.log("here props")
