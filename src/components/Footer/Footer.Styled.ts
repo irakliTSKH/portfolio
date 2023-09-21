@@ -15,9 +15,8 @@ export const FooterStyled = styled.div`
         font-size: 50px;
         color: white;
         flex-wrap: wrap;
-
     }
-   
+    
     a {
         margin: 80px 30px 0 ;
         color: grey;
@@ -30,6 +29,7 @@ export const FooterStyled = styled.div`
 
     h3 {
         color: grey;
+        font-size: 10px;
     }
 `
 

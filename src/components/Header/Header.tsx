@@ -53,4 +53,3 @@ const Header = forwardRef((_, ref: any) => {
 export default Header;
 
 
-console.log("here props")

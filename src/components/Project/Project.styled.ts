@@ -1,56 +1,36 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { CircleProps } from "../../types/types";
 
 export const ProjectsStyled = styled.div`
   width: 100%;
- backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 100px;
   position: relative;
   background: white;
+  color: #101023;
+  overflow: hidden;
 `;
 
-const CircleAnimate = keyframes`
-
-  0%{
-      scale: calc(1);
-  }
-
-  25%{
-    scale: calc(1.5);
-  }
-
-  50%{
-    scale: calc(2);
-  }
-  
-  75%{
-    scale: calc(1.5);
-  }
-  
-  100%{
-    scale: calc(1);
-  }
-`;
 
 export const Circle = styled.div<CircleProps>`
   position: absolute;
   border-radius: 50%;
-  background-color: yellow;
+  border: 10px solid #101023;
   filter: blur(4px);
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
   top: ${(props) => props.top}px;
   left: ${(props) => props.left}px;
   right: ${(props) => props.right}px;
-  /* animation: ${CircleAnimate} 3s linear infinite; */
+  box-shadow: 20px 20px 20px;
+
+  @media screen and (max-width: 720px){
+    display: none;
+  }
 `;
-
-
-
-
 export const ProjectDiv = styled.div`
   position: relative;
   width: 70vw;

@@ -10,6 +10,7 @@ import {
   FaReact,
   FaSass,
   FaBootstrap,
+  FaFigma
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -24,6 +25,7 @@ const Footer = () => {
         <SiTypescript />
         <FaSass />
         <FaBootstrap />
+        <FaFigma />
       </div>
 
       <div>

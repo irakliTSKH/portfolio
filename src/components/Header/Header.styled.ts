@@ -4,12 +4,12 @@ import { PropsType } from "../../types/types";
 import { FaStar } from "react-icons/fa";
 
 export const MainDiv = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
   background: #101023;
+  transition: 2s;
 `;
 // header
 export const HeaderStyled = styled.div`
