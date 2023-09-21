@@ -1,5 +1,38 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
+
+// const animate = keyframes`
+//     0% {
+//         transform: rotate(-50deg);
+//     }
+//     25% {
+//         transform: rotate(0);
+//     }
+//     50% {
+//         transform: rotate(50deg);
+//     }
+//     75% {
+//         transform: rotate(0);
+//     }
+//     100% {
+//         transform: rotate(-50deg);
+//     }
+
+// `
+
+
+export const LetsFun = styled.div`
+    position: relative;
+    top: 20px;
+
+    h2 {
+        font-size: 20px;
+        color: white;
+      
+    }
+
+    
+`
 export const SkillsStyled = styled.div`
     padding: 200px  50px;
     gap: 20px;
@@ -29,3 +62,4 @@ export const SkillDiv = styled.div`
          width: 350px;
     }
     `
+

@@ -32,3 +32,10 @@ export interface CircleProps {
   width?: number;
   height?: number;
 }
+
+export interface CountryInfo {
+  name: string;
+  capital: string;
+  population: number;
+  flag: string;
+}
