@@ -4,25 +4,25 @@ import { useRef } from "react";
 // components
 import Header from "./components/Header/Header";
 import Projects from "./components/Project/Projects";
-import Skills from "./components/Skills/Skills";
+import Fun from "./components/Fun/Fun";
 import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Header/Navigation/Navigation";
 
 function App() {
   const headerRef = useRef<HTMLDivElement>(null);
   const projectRef = useRef<HTMLDivElement>(null);
-  const skillsRef = useRef<HTMLDivElement>(null);
+  const FunRef = useRef<HTMLDivElement>(null);
 
   return (
     <MainDiv>
       <Navigation
         headerRef={headerRef}
         projectRef={projectRef}
-        skillsRef={skillsRef}
+        FunRef={FunRef}
       />
       <Header ref={headerRef} />
       <Projects ref={projectRef} />
-      <Skills ref={skillsRef} />
+      <Fun ref={FunRef} />
       <Footer />
     </MainDiv>
   );

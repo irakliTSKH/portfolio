@@ -1,6 +1,6 @@
 export interface PropsTypes {
   headerRef: React.RefObject<HTMLDivElement>;
-  skillsRef: React.RefObject<HTMLDivElement>;
+  FunRef: React.RefObject<HTMLDivElement>;
   projectRef: React.RefObject<HTMLDivElement>;
 }
 

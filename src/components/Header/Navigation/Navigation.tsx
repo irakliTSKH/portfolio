@@ -21,14 +21,14 @@ const reload = () => {
   window.location.reload()
 }
 
-const Navigation = ({headerRef, skillsRef, projectRef }:PropsTypes) => {
+const Navigation = ({headerRef, FunRef, projectRef }:PropsTypes) => {
 
   return (
     <>
     <MobileBarStyled>
       <FaHome onClick={() => scrollToElement(headerRef)}/>
       <FaSitemap onClick={() => scrollToElement(projectRef)}/>
-      <FaChalkboardTeacher  onClick={() => scrollToElement(skillsRef)}/>
+      <FaChalkboardTeacher  onClick={() => scrollToElement(FunRef)}/>
     </MobileBarStyled>
 
     <NavBarStyled 
@@ -40,7 +40,7 @@ const Navigation = ({headerRef, skillsRef, projectRef }:PropsTypes) => {
       <ul>
         <li onClick={() => scrollToElement(headerRef)}>About</li>
         <li onClick={() => scrollToElement(projectRef)}>Projects</li>
-        <li onClick={() => scrollToElement(skillsRef)}>skills</li>
+        <li onClick={() => scrollToElement(FunRef)}>LetsFun</li>
       </ul>
     </NavBarStyled>
 

@@ -2,7 +2,7 @@ import { ClockStyled, HourHand, MinuteHand, SecondeHand} from "./Clock.styled"
 import Time from "./Time"
 
 
-function Clock() {
+const Clock: React.FC = () => {
   const time = Time()
   return (
     <ClockStyled>

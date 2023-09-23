@@ -1,26 +1,26 @@
-import { SkillsStyled, SkillDiv, LetsFun } from "./Skills.styled";
+import { FunStyled, FunDiv, LetsFun } from "./Fun.styled";
 import { forwardRef } from "react";
 import Clock from "./FunProjects/Clock/Clock";
-import Weather from "./FunProjects/Weather/Weather";
 import CountryInfoComponent from "./FunProjects/CountryInfoComponent/CountryInfoComponent";
+import Submit from "./FunProjects/Rating/Submit";
 
-const arr = [Clock, Weather, CountryInfoComponent];
+const arr = [Clock, Submit, CountryInfoComponent];
 
-const Skills = forwardRef((_, ref: any) => {
+const Fun = forwardRef((_, ref: any) => {
   return (
     <>
       <LetsFun>
         <h2>Lets Fun</h2>
       </LetsFun>
-      <SkillsStyled ref={ref}>
+      <FunStyled ref={ref}>
         {arr.map((MiniProj, index) => (
-          <SkillDiv key={index}>
+          <FunDiv key={index}>
             <MiniProj />
-          </SkillDiv>
+          </FunDiv>
         ))}
-      </SkillsStyled>
+      </FunStyled>
     </>
   );
 });
 
-export default Skills;
+export default Fun;
