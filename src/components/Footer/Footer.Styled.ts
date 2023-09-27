@@ -12,7 +12,7 @@ export const FooterStyled = styled.div`
     div {
         display: flex;
         gap: 10px;
-        font-size: 50px;
+        font-size: 30px;
         color: white;
         flex-wrap: wrap;
     }
@@ -20,7 +20,7 @@ export const FooterStyled = styled.div`
     a {
         margin: 80px 30px 0 ;
         color: grey;
-        font-size: 30px;
+        font-size: 20px;
         &:hover{
             color: white;
             transition: all 1s ease;

@@ -16,42 +16,68 @@ const animate = keyframes`
   }
 `;
 export const LetsFun = styled.div`
-  position: relative;
-  top: 100px;
   h2 {
+    margin-top: 100px;
     font-size: 20px;
     color: white;
     animation: ${animate} 1s ease infinite;
   }
 `;
+
 export const FunStyled = styled.div`
-  padding: 200px 50px;
-  gap: 20px;
-  display: grid;
-  grid-template-columns: auto auto;
+  width: 60%;
+  margin: 70px 0 100px;
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-  @media screen and (max-width: 720px) {
-    display: flex;
-    flex-direction: column;
-    padding: 20%;
+    margin: 50px 0 200px;
   }
 `;
 
 export const FunDiv = styled.div`
-  height: 250px;
-  width: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  border: 5px solid red;
   overflow: hidden;
+  height: 60vh;
+`;
 
-  @media screen and (min-width: 720px) {
-    height: 350px;
-    width: 350px;
+export const CustomSlickArrows = styled.div`
+  .slick-next {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: -50px;
+    &:hover {
+      background-color: grey;
+    }
+    @media screen and (min-width: 720px) {
+      right: -100px;
+    }
+  }
+  .slick-prev {
+    height: 50px;
+    width: 50px;
+    z-index: 11;
+    position: absolute;
+    left: -50px;
+    &:hover {
+      background-color: grey;
+    }
+    @media screen and (min-width: 720px) {
+      left: -100px;
+    }
   }
 `;
+
+export const Container = styled.div`
+  .slick-slide {
+    /* background-color: #f0f0f0; */
+    /* border: 1px solid #ddd; */
+    /* padding: 20px; */
+
+    /* margin: 10px; */
+    /* padding: 20px; */
+  }
+`;
+
+console.log("slick slide here");

@@ -14,7 +14,6 @@ export const ProjectsStyled = styled.div`
   overflow: hidden;
 `;
 
-
 export const Circle = styled.div<CircleProps>`
   position: absolute;
   border-radius: 50%;
@@ -27,14 +26,14 @@ export const Circle = styled.div<CircleProps>`
   right: ${(props) => props.right}px;
   box-shadow: 20px 20px 20px;
 
-  @media screen and (max-width: 720px){
+  @media screen and (max-width: 720px) {
     display: none;
   }
 `;
 export const ProjectDiv = styled.div`
   position: relative;
   width: 70vw;
-  height: 40vh;
+  height: 60vh;
   margin: 80px;
   overflow: hidden;
   display: flex;
@@ -66,7 +65,7 @@ export const ProjectDiv = styled.div`
 
   @media screen and (min-width: 920px) {
     width: 70vw;
-    height: 80vh;
+    height: 70vh;
     margin: 100px;
     div {
       h2 {
