@@ -43,28 +43,41 @@ export const FunDiv = styled.div`
 
 export const CustomSlickArrows = styled.div`
   .slick-next {
-    height: 50px;
-    width: 50px;
+
+    height: 30px;
+    width: 30px;
     position: absolute;
     right: -50px;
+    background-color: red;
+    border-radius: 50%;
+    transition: all 1s ease ;
     &:hover {
       background-color: grey;
     }
+
     @media screen and (min-width: 720px) {
       right: -100px;
+      height: 50px;
+      width: 50px;
     }
   }
   .slick-prev {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     z-index: 11;
     position: absolute;
     left: -50px;
+    background-color: red;
+    border-radius: 50%;
+    transition: all 1s ease ;
+
     &:hover {
       background-color: grey;
     }
     @media screen and (min-width: 720px) {
       left: -100px;
+      height: 50px;
+      width: 50px;
     }
   }
 `;
@@ -80,4 +93,6 @@ export const Container = styled.div`
   }
 `;
 
-console.log("slick slide here");
+console.log("slick slide here styled");
+
+

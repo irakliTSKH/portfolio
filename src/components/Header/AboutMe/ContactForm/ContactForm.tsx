@@ -21,10 +21,10 @@ function ContactForm() {
   
     try {
       const result = await emailjs.sendForm(
-        "your_service_id",
-        "your_template_id",
+        "service_yi92myp",
+        "template_brhf3yn",
         form.current,
-        "your_user_id"
+        "1vi3FZC-Ut70jNoq-"
       );
   
       console.log(result.text);

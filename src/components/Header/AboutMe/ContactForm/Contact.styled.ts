@@ -20,9 +20,9 @@ export const AboutMeDiv = styled(motion.div)`
   text-align: center;
   padding: 30px 30px;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   @media screen and (min-width: 720px) {
-    font-size: 22px;
+    font-size: 16px;
     width: 30vw;
     height: 50vh;
   }
@@ -42,7 +42,7 @@ export const ContactFormStyled = styled.form`
     color: white;
     width: 80%;
     background-color: #2e303e;
-    height: 10px;
+    height: 7px;
     padding: 10px;
   }
   textarea {
@@ -50,15 +50,17 @@ export const ContactFormStyled = styled.form`
     background-color: #2e303e;
     padding: 10px;
     width: 80%;
-    height: 50px;
+    height: 30%;
   }
 
   button {
     width: 50%;
-    height: 30px;
-    padding: 5px;
+    height: 20px;
     cursor: pointer;
     background-color: #2e303e;
     color: white;
+    @media screen and (min-width: 720px) {
+      height: 30px;
+  }
   }
 `;

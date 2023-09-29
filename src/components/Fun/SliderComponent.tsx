@@ -29,13 +29,15 @@ const SliderComponent = () => {
   return (
     <Container>
       <CustomSlickArrows>
-        <Slider {...settings}>
-          {arr.map((MiniProj, index) => (
-            <FunDiv key={index}>
-              <MiniProj />
-            </FunDiv>
-          ))}
-        </Slider>
+
+          <Slider {...settings}>
+            {arr.map((MiniProj, index) => (
+              <FunDiv key={index}>
+                <MiniProj />
+              </FunDiv>
+            ))}
+          </Slider>
+
       </CustomSlickArrows>
     </Container>
   );
