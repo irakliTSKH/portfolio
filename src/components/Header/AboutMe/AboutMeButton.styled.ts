@@ -11,7 +11,6 @@ export const AboutButtonStyled = styled.button`
   padding: 8px 13px;
   border-radius: 5px;
   position: relative;
-  z-index: 11;
   background: gray;
   transition:  1s;
   &:hover{
