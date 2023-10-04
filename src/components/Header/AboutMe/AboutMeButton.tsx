@@ -1,7 +1,7 @@
 import { AboutButtonStyled } from "./AboutMeButton.styled";
 import { useState } from "react";
 import { AboutWrapper} from "../Header.styled";
-import { AboutMeDiv, ContactDiv, DeleteButton } from "./ContactForm/Contact.styled";
+import { AboutMeDiv, ContactDiv, DeleteButton, Span } from "./ContactForm/Contact.styled";
 import ContactForm from "./ContactForm/ContactForm";
 
 function AboutMeButton() {
@@ -13,11 +13,7 @@ function AboutMeButton() {
 
   return (
     <>
-      <AboutButtonStyled 
-        onClick={() => openAbout()} 
-        animate={{ rotateX: 360 }}
-        transition={{duration: 1.5}}
-      >
+      <AboutButtonStyled onClick={openAbout}>
         About Me
       </AboutButtonStyled>
 
@@ -28,9 +24,14 @@ function AboutMeButton() {
             initial={{x: -600}}
             transition={{duration: 0.5}}
             >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam
-            fuga a quo deleniti tempora eaque dolorum omnis totam. Officia error
-            atque impedit repellendus ea cumque vero porro alias architecto.
+              <h2>
+                About Me
+              </h2>
+              <p>
+                I'm Irakli Tskhelishvili,  Georgian  <br/> <Span>Front-end developer. </Span> 
+                I like to resolve design problems, create smart user interface and imagine useful interaction, 
+                developing rich web experiences & web applications.
+              </p>
           </AboutMeDiv>
           <ContactDiv
             animate={{x: 0 }} 

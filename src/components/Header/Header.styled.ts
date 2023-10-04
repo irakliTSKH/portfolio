@@ -3,18 +3,21 @@ import { motion } from "framer-motion";
 import { PropsType } from "../../types/types";
 import { FaStar } from "react-icons/fa";
 
+export const Enter = styled.div`
+  background-color: blue;
+  height: 100%;
+`
 export const MainDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
   background: #101023;
-  transition: 2s;
 `;
 // header
 export const HeaderStyled = styled.div`
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   color: white;
 `;
 

@@ -41,7 +41,7 @@ const Navigation = ({headerRef, FunRef, projectRef }:PropsTypes) => {
         <li onClick={() => scrollToElement(headerRef)}>About</li>
         <li onClick={() => scrollToElement(projectRef)}>Projects</li>
         <li onClick={() => scrollToElement(FunRef)}>LetsFun</li>
-      </ul>
+              </ul>
     </NavBarStyled>
 
     </>

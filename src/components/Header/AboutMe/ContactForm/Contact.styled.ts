@@ -20,7 +20,7 @@ export const AboutMeDiv = styled(motion.div)`
   text-align: center;
   padding: 30px 30px;
   color: black;
-  font-size: 12px;
+  font-size: 10px;
   @media screen and (min-width: 720px) {
     font-size: 16px;
     width: 30vw;
@@ -29,7 +29,17 @@ export const AboutMeDiv = styled(motion.div)`
 `;
 export const ContactDiv = styled(AboutMeDiv)`
   background-color: #2e303e;
+
 `;
+
+export const Span = styled.span`
+  color: red;
+  font-size: 14px;
+  @media screen and (min-width: 720px) {
+    font-size: 20px;
+    
+  }
+`
 
 export const ContactFormStyled = styled.form`
   display: flex;

@@ -7,7 +7,7 @@ import  SliderComponent from "./SliderComponent";
 const Fun = forwardRef((_, ref: any) => {
   return (
     <>
-      <LetsFun ref={ref}>
+      <LetsFun  ref={ref}>
         <h2>Lets Fun</h2>
       </LetsFun>
       <FunStyled>

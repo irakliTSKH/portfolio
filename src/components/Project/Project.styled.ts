@@ -33,7 +33,7 @@ export const Circle = styled.div<CircleProps>`
 export const ProjectDiv = styled.div`
   position: relative;
   width: 70vw;
-  height: 60vh;
+  height: 50vh;
   margin: 80px;
   overflow: hidden;
   display: flex;
@@ -64,7 +64,7 @@ export const ProjectDiv = styled.div`
   }
 
   @media screen and (min-width: 920px) {
-    width: 70vw;
+    width: 60vw;
     height: 70vh;
     margin: 100px;
     div {

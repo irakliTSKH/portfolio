@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 export const MobileBarStyled = styled.div`
     background-color: rgba(205, 205, 205, 0.6);
-    width: 250px;
-    height: 50px;
+    width: 50%;
+    height: 30px;
     border-radius: 20px;
     display: flex;
     align-items: center;

@@ -25,11 +25,16 @@ export const LetsFun = styled.div`
 `;
 
 export const FunStyled = styled.div`
-  width: 60%;
+  width: 70%;
   margin: 70px 0 100px;
+
+  @media screen and (min-width: 720px) {
+    width: 40%;
+  }
 
   @media screen and (min-width: 1200px) {
     margin: 50px 0 200px;
+    width: 30%;
   }
 `;
 
@@ -43,22 +48,23 @@ export const FunDiv = styled.div`
 
 export const CustomSlickArrows = styled.div`
   .slick-next {
-
     height: 30px;
     width: 30px;
     position: absolute;
     right: -50px;
-    background-color: red;
+    background-color: gray;
     border-radius: 50%;
-    transition: all 1s ease ;
+    transition: all 1s ease;
+    visibility: hidden;
     &:hover {
-      background-color: grey;
+      background-color: red;
     }
 
     @media screen and (min-width: 720px) {
       right: -100px;
       height: 50px;
       width: 50px;
+      visibility: visible;
     }
   }
   .slick-prev {
@@ -67,17 +73,19 @@ export const CustomSlickArrows = styled.div`
     z-index: 11;
     position: absolute;
     left: -50px;
-    background-color: red;
+    background-color: gray;
     border-radius: 50%;
-    transition: all 1s ease ;
+    transition: all 1s ease;
+    visibility: hidden;
 
     &:hover {
-      background-color: grey;
+      background-color: red;
     }
     @media screen and (min-width: 720px) {
       left: -100px;
       height: 50px;
       width: 50px;
+      visibility: visible;
     }
   }
 `;
@@ -94,5 +102,3 @@ export const Container = styled.div`
 `;
 
 console.log("slick slide here styled");
-
-

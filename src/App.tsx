@@ -1,4 +1,4 @@
-import { MainDiv } from "./components/Header/Header.styled";
+import { MainDiv,Enter} from "./components/Header/Header.styled";
 import { useRef } from "react";
 
 // components
@@ -14,17 +14,19 @@ function App() {
   const FunRef = useRef<HTMLDivElement>(null);
 
   return (
-    <MainDiv>
-      <Navigation
-        headerRef={headerRef}
-        projectRef={projectRef}
-        FunRef={FunRef}
-      />
-      <Header ref={headerRef} />
-      <Projects ref={projectRef} />
-      <Fun ref={FunRef} />
-      <Footer />
-    </MainDiv>
+    <Enter>
+      <MainDiv>
+        <Navigation
+          headerRef={headerRef}
+          projectRef={projectRef}
+          FunRef={FunRef}
+        />
+        <Header ref={headerRef} />
+        <Projects ref={projectRef} />
+        <Fun ref={FunRef} />
+        <Footer />
+      </MainDiv>
+    </Enter>
   );
 }
 
