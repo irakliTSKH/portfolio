@@ -1,12 +1,33 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { PropsType } from "../../types/types";
 import { FaStar } from "react-icons/fa";
 
+const animation = keyframes`
+0%
+{
+  background-color: white;
+}
+100%
+{
+  background: #101023;
+ 
+}
+`;
+
 export const Enter = styled.div`
-  background-color: blue;
-  height: 100%;
-`
+background: #101023;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: ${animation} 1.5s linear ;
+`;
+
+
+
 export const MainDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -72,7 +93,6 @@ export const AboutWrapper = styled.div`
     top: 100px;
   }
 `;
-
 
 // END AboutMe
 
