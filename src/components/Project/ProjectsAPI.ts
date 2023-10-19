@@ -1,6 +1,7 @@
 
 import  game  from "../../assets/Screenshot from 2023-09-15 00-06-00.png";
 import  clock  from "../../assets/Screenshot from 2023-09-15 00-18-46.png";
+import page from "../../assets/Screenshot from 2023-10-19 14-25-11.png"
 
 export const projectList = [
   {
@@ -19,9 +20,9 @@ export const projectList = [
   },
   {
     key:3,
-    title: "Mini-Game3",
-    img: game,
-    url: "https://iraklitskh.github.io/mini-Game/",
+    title: "Dynamic page",
+    img: page,
+    url: "https://jazzy-belekoy-1434d0.netlify.app/",
     
   }
 ];
